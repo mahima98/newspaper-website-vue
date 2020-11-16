@@ -1,4 +1,5 @@
 <template>
+  <div class="bg-blue-700 text-white">
     <div class="container mx-auto">
       <div class="flex justify-between p-4">
         <div class="logo">
@@ -9,21 +10,21 @@
           />
         </div>
         <div class="title-bar">
-          <div class="flex  px-4 text-sm">
-            <div class="px-3 py-1 border-b-4 border-red-800 font-light">
+          <div class="flex py-2 px-4 text-sm">
+            <div class="px-2 py-1 border-b-4 border-red-800 font-light">
               Politique
             </div>
-            <div class="px-3 py-1 border-b-4 border-blue-500">Societe</div>
-            <div class="px-3 py-1 border-b-4 border-yellow-500">Economie</div>
-            <div class="px-3 py-1 border-b-4 border-green-500">Regions</div>
-            <div class="px-3 py-1 border-b-4 border-blue-500">Idees</div>
-            <div class="px-3 py-1 border-b-4 border-orange-500">Sport</div>
-            <div class="px-3 py-1 border-b-4 border-blue-300">
+            <div class="px-2 py-1 border-b-4 border-blue-500">Societe</div>
+            <div class="px-2 py-1 border-b-4 border-yellow-500">Economie</div>
+            <div class="px-2 py-1 border-b-4 border-green-500">Regions</div>
+            <div class="px-2 py-1 border-b-4 border-blue-500">Idees</div>
+            <div class="px-2 py-1 border-b-4 border-orange-500">Sport</div>
+            <div class="px-2 py-1 border-b-4 border-blue-300">
               International
             </div>
-            <div class="px-3 py-1 border-b-4 border-purple-500">Vous</div>
-            <div class="px-3 py-1 border-b-4 border-red-400">Multimedia</div>
-            <div class="px-3 py-1 border-b-4 border-white">
+            <div class="px-2 py-1 border-b-4 border-purple-500">Vous</div>
+            <div class="px-2 py-1 border-b-4 border-red-400">Multimedia</div>
+            <div class="px-2 py-1 border-b-4 border-white">
               Petites Announce
             </div>
           </div>
