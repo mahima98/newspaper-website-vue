@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-blue-500">
+  <div class="home">
     <Menubar />
   </div>
 </template>
