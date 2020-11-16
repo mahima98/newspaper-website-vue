@@ -3,11 +3,13 @@
     <div class="container mx-auto">
       <div class="flex justify-between p-2">
         <div class="logo">
-          <img
-            class="w-40 h-10"
-            alt="newspaper logo"
-            src="../assets/images/logo.png"
-          />
+          <div class="flex items-center justify-center">
+            <img
+              class="w-40 h-10"
+              alt="newspaper logo"
+              src="../assets/images/logo.png"
+            />
+          </div>
         </div>
         <div class="title-bar">
           <div class="flex py-2 px-4 text-sm tracking-wide font-">
