@@ -7,9 +7,7 @@
       <div class="description-sec col-span-3 ">
         <div class="space-y-2 p-2 text-left text-white">
           <div class="title text-lg">
-            <a href="" class="hover:underline"
-              >PJ : «Gouvernement pou fer tou so possib pou paye pansion»
-            </a>
+            <a href="" class="hover:underline"> {{ firstvalues.title }}</a>
           </div>
           <div class="time">
             <div class="flex text-xss text-gray-300 space-x-2">
@@ -52,7 +50,7 @@
                     />
                   </svg>
                 </div>
-                <div class="">17 NOV 2020</div>
+                <div class="">{{ firstvalues.date }}</div>
               </div>
               <div class="flex justify-center items-center">
                 <div class="">
@@ -79,7 +77,7 @@
                     />
                   </svg>
                 </div>
-                <div>11:45</div>
+                <div>{{ firstvalues.time }}</div>
               </div>
               <div class="flex justify-center items-center">
                 <div>
@@ -106,14 +104,12 @@
                     </defs>
                   </svg>
                 </div>
-                <div>0</div>
+                <div>{{ firstvalues.msg }}</div>
               </div>
             </div>
           </div>
           <div class="descrpt text-sm">
-            Comme prévu, le feuilleton parlementaire tient toutes ses promesses
-            en ce mardi 17 novembre. Shakeel Mohamed et Patrick Assirvaden ont
-            été expulsés d…
+            {{ firstvalues.description }}
           </div>
         </div>
       </div>
@@ -121,5 +117,7 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+  props: ["firstvalues"],
+};
 </script>
