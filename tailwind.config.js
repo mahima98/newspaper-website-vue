@@ -25,7 +25,7 @@ module.exports = {
         500: "#a0aec0",
         600: "#718096",
         700: "#A3A3A3",//
-        800: "#2d3748",
+        800: "#2B2B2B", //
         900: "#1a202c",
       },
       red: {
@@ -282,13 +282,14 @@ module.exports = {
       ],
       prata: ["Prata", "serif"],
 
-      roboto: ["Roboto", "Arial", "Helvetica", "sans-serif"],
+      roboto: ["Roboto", "sans-serif"],
 
       Josefin: ["Josefin Sans", "sans-serif"],
       bellefair: ["Bellefair", "sans-serif"],
     },
     fontSize: {
       xxs: "0.50rem",
+      xss: "0.65rem",
       xs: "0.75rem",
       sm: "0.8125rem",
       base: "1rem",
