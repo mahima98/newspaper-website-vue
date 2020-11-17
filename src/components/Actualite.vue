@@ -19,7 +19,11 @@
         <div class="second-col">
           <Ads2 />
           <div>
-            <ActualiteBox3 />
+            <ActualiteBox3
+              v-for="(description, index) in descriptions"
+              :myvalues="description"
+              :key="index"
+            />
           </div>
         </div>
         <div class="third-col"></div>
@@ -39,6 +43,45 @@ export default {
     ActualiteBox2,
     Ads2,
     ActualiteBox3,
+  },
+  data: () => {
+    return {
+      //   subtitle: false,
+      descriptions: [
+        {
+          title: "Examens post-internat: 289 nouveaux médecins et 18 recalés",
+          date: "7 NOV 2020",
+          time: "11:45",
+        },
+        {
+          title: "St.-Louis Gate: Alain Hao Thyn Voon libéré",
+          date: "6 NOV 2020",
+          time: "12:00",
+        },
+        {
+          title:
+            "Deal entre la MTPA et le Liverpool FC: Rs 400 millions pour 2",
+          date: "6 NOV 2020",
+          time: "12:00",
+        },
+        {
+          title:
+            "Présidentielle américaine: le débat Trump-Biden vire au chaos",
+          date: "6 NOV 2020",
+          time: "12:00",
+        },
+        {
+          title: "Coronavirus: le point sur la pandémie dans le monde",
+          date: "6 NOV 2020",
+          time: "12:00",
+        },
+        {
+          title: "Les grands titres de l'express de ce jeudi 1er octobre 2020",
+          date: "6 NOV 2020",
+          time: "12:00",
+        },
+      ],
+    };
   },
 };
 </script>
