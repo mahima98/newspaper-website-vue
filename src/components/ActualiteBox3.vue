@@ -1,6 +1,6 @@
 <template>
   <div class="ActualiteBox3">
-    <div class="py-2 border-b-2 border-gray-200">
+    <div class="pb-2 mb-2 border-b-2 border-gray-200">
       <div class="grid grid-cols-4">
         <div class="image-sec">
           <img
@@ -112,7 +112,7 @@
                       </defs>
                     </svg>
                   </div>
-                  <div>0</div>
+                  <div>{{ myvalues.msg }}</div>
                 </div>
               </div>
             </div>
