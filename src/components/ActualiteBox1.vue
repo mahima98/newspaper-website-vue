@@ -7,7 +7,9 @@
       <div class="description-sec col-span-3 ">
         <div class="space-y-2 p-2 text-left text-white">
           <div class="title text-lg">
-            [Live] : Parlement : caméra, il y a de l’action…
+            <a href="" class="hover:underline"
+              >PJ : «Gouvernement pou fer tou so possib pou paye pansion»
+            </a>
           </div>
           <div class="time">
             <div class="flex text-xss space-x-2">
