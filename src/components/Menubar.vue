@@ -13,19 +13,19 @@
         </div>
         <div class="title-bar">
           <div class="flex py-2 px-4 text-sm tracking-wide font-">
-            <div class="px-3 pb-2 border-b-4 border-red-800 font-light">
+            <div class="px-3 pb-2 border-b-4 border-red-700 font-light">
               Politique
             </div>
-            <div class="px-3 pb-2 border-b-4 border-blue-500">Societe</div>
-            <div class="px-3 pb-2 border-b-4 border-yellow-500">Economie</div>
-            <div class="px-3 pb-2 border-b-4 border-green-500">Regions</div>
-            <div class="px-3 pb-2 border-b-4 border-blue-500">Idees</div>
-            <div class="px-3 pb-2 border-b-4 border-orange-500">Sport</div>
-            <div class="px-3 pb-2 border-b-4 border-blue-300">
+            <div class="px-3 pb-2 border-b-4 border-blue-700">Societe</div>
+            <div class="px-3 pb-2 border-b-4 border-yellow-700">Economie</div>
+            <div class="px-3 pb-2 border-b-4 border-green-700">Regions</div>
+            <div class="px-3 pb-2 border-b-4 border-gray-700">Idees</div>
+            <div class="px-3 pb-2 border-b-4 border-orange-700">Sport</div>
+            <div class="px-3 pb-2 border-b-4 border-blue-600">
               International
             </div>
-            <div class="px-3 pb-2 border-b-4 border-purple-500">Vous</div>
-            <div class="px-3 pb-2 border-b-4 border-red-400">Multimedia</div>
+            <div class="px-3 pb-2 border-b-4 border-purple-700">Vous</div>
+            <div class="px-3 pb-2 border-b-4 border-pink-700">Multimedia</div>
             <div class="px-3 pb-2 border-b-4 border-white">
               Petites Announce
             </div>
