@@ -11,11 +11,11 @@
           </div>
           <div class="time">
             <div class="flex text-xss text-gray-300 space-x-2">
-              <div class="flex justify-center items-center">
+              <div class="flex items-center space-x-1">
                 <div>
                   <svg
-                    width="10"
-                    height="10"
+                    width="11"
+                    height="11"
                     viewBox="0 0 8 8"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -52,11 +52,11 @@
                 </div>
                 <div class="">{{ firstvalues.date }}</div>
               </div>
-              <div class="flex justify-center items-center">
+              <div class="flex items-center space-x-1">
                 <div class="">
                   <svg
-                    width="10"
-                    height="10"
+                    width="11"
+                    height="11"
                     viewBox="0 0 8 8"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -79,11 +79,11 @@
                 </div>
                 <div>{{ firstvalues.time }}</div>
               </div>
-              <div class="flex justify-center items-center">
+              <div class="flex items-center space-x-1">
                 <div>
                   <svg
-                    width="10"
-                    height="10"
+                    width="11"
+                    height="11"
                     viewBox="0 0 9 9"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
