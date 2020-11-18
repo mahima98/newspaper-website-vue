@@ -1,11 +1,23 @@
+;
 <template>
   <div class="ActualiteBox1">
-    <div class="grid grid-cols-7 bg-gray-800">
-      <div class="image-sec col-span-4">
+    <div
+      class="flex  "
+      :class="{
+        'flex-row-reverse ': firstvalues.reverse,
+        'bg-gray-800': !firstvalues.reverse,
+      }"
+    >
+      <div class="image-sec w-7/12">
         <img class="object-cover w-full" src="../assets/images/image1.png" />
       </div>
-      <div class="description-sec col-span-3 ">
-        <div class="space-y-2 p-2 text-left text-white">
+      <div class="description-sec  w-5/12 ">
+        <div
+          class="space-y-2 p-2 text-left "
+          :class="{
+            'text-white': !firstvalues.reverse,
+          }"
+        >
           <div class="title text-lg">
             <a href="" class="hover:underline"> {{ firstvalues.title }}</a>
           </div>
