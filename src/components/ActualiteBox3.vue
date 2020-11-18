@@ -111,7 +111,6 @@
                       </defs>
                     </svg>
                   </div>
-                  <div>{{ myvalues.msg }}</div>
                 </div>
               </div>
             </div>
