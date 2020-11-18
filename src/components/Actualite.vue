@@ -1,7 +1,7 @@
 <template>
   <div class="Actualite container mx-auto">
     <div class="actuality-bar py-2">
-      <div class="border-b-8 border-blue-800">
+      <div class="border-b-4 border-blue-800">
         <div class="flex justify-left text-3xl font-sans font-light">
           Actualite
         </div>
@@ -173,86 +173,86 @@
                   class="object-cover w-full"
                   src="../assets/images/image2.png"
                 />
-              </div>
-              <div class="space-y-2 py-2">
-                <div class="text-center text-gray-500">
-                  <a href="">Partager cette carricature</a>
-                </div>
-                <div class="grid grid-cols-3">
-                  <button
-                    class="flex justify-center items-center space-x-1 py-4 px-8 text-white bg-blue-500"
-                  >
-                    <div>
-                      <svg
-                        width="25"
-                        height="21"
-                        viewBox="0 0 25 21"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M18.75 1.75H15.625C14.2437 1.75 12.9189 2.21094 11.9421 3.03141C10.9654 3.85188 10.4167 4.96468 10.4167 6.125V8.75H7.29166V12.25H10.4167V19.25H14.5833V12.25H17.7083L18.75 8.75H14.5833V6.125C14.5833 5.89294 14.6931 5.67038 14.8884 5.50628C15.0838 5.34219 15.3487 5.25 15.625 5.25H18.75V1.75Z"
-                          stroke="white"
+                <div class="space-y-2 py-2">
+                  <div class="text-center text-gray-500">
+                    <a href="">Partager cette carricature</a>
+                  </div>
+                  <div class="grid grid-cols-3">
+                    <button
+                      class="flex justify-center items-center space-x-1 py-4 px-8 text-white bg-blue-500"
+                    >
+                      <div>
+                        <svg
+                          width="25"
+                          height="21"
+                          viewBox="0 0 25 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M18.75 1.75H15.625C14.2437 1.75 12.9189 2.21094 11.9421 3.03141C10.9654 3.85188 10.4167 4.96468 10.4167 6.125V8.75H7.29166V12.25H10.4167V19.25H14.5833V12.25H17.7083L18.75 8.75H14.5833V6.125C14.5833 5.89294 14.6931 5.67038 14.8884 5.50628C15.0838 5.34219 15.3487 5.25 15.625 5.25H18.75V1.75Z"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                    <button
+                      class="flex justify-center items-center space-x-1 py-4 px-8 text-black bg-blue-600"
+                    >
+                      <div class="text-white">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
                           stroke-width="2"
                           stroke-linecap="round"
                           stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                  </button>
-                  <button
-                    class="flex justify-center items-center space-x-1 py-4 px-8 text-black bg-blue-600"
-                  >
-                    <div class="text-white">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-twitter"
-                      >
-                        <path
-                          d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
-                        ></path>
-                      </svg>
-                    </div>
-                  </button>
-                  <button
-                    class="flex justify-center items-center space-x-1 py-4 px-4 text-black bg-black"
-                  >
-                    <div>
-                      <svg
-                        width="21"
-                        height="18"
-                        viewBox="0 0 21 18"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M3.5 3H17.5C18.4625 3 19.25 3.675 19.25 4.5V13.5C19.25 14.325 18.4625 15 17.5 15H3.5C2.5375 15 1.75 14.325 1.75 13.5V4.5C1.75 3.675 2.5375 3 3.5 3Z"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M19.25 4.5L10.5 9.75L1.75 4.5"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </div>
-                  </button>
-                </div>
-                <div class="text-center text-sm text-gray-600">
-                  <a href="">Plus de carricature de POV</a>
+                          class="feather feather-twitter"
+                        >
+                          <path
+                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </button>
+                    <button
+                      class="flex justify-center items-center space-x-1 py-4 px-4 text-black bg-black"
+                    >
+                      <div>
+                        <svg
+                          width="21"
+                          height="18"
+                          viewBox="0 0 21 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M3.5 3H17.5C18.4625 3 19.25 3.675 19.25 4.5V13.5C19.25 14.325 18.4625 15 17.5 15H3.5C2.5375 15 1.75 14.325 1.75 13.5V4.5C1.75 3.675 2.5375 3 3.5 3Z"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M19.25 4.5L10.5 9.75L1.75 4.5"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="text-center text-sm text-gray-600">
+                    <a href="">Plus de carricature de POV</a>
+                  </div>
                 </div>
               </div>
             </div>
