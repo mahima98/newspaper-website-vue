@@ -9,7 +9,10 @@
       }"
     >
       <div class="image-sec w-7/12">
-        <img class="object-cover w-full" src="../assets/images/image1.png" />
+        <img
+          class="object-cover h-64 w-full"
+          src="../assets/images/image1.png"
+        />
       </div>
       <div class="description-sec  w-5/12 ">
         <div

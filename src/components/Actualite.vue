@@ -10,7 +10,7 @@
     <div class="actuality-components">
       <div class="grid grid-cols-4 gap-4">
         <div class="first-col col-span-2 ">
-          <div class="grid grid-rows-3 gap-2">
+          <div class="grid grid-rows-3 gap-4">
             <ActualiteBox1
               v-for="(description, index) in firstdatas"
               :firstvalues="description"
@@ -20,7 +20,7 @@
           </div>
         </div>
         <div class="second-col">
-          <div class="grid grid-rows-4 gap-2">
+          <div class="grid grid-rows-4 gap-4">
             <Ads2 />
             <div class="row-span-3">
               <ActualiteBox3
@@ -286,7 +286,7 @@ export default {
     return {
       //   subtitle: false,
       firstdatas: cards.slice(0, 3),
-      secondatas: cards.slice(0, 7),
+      secondatas: cards.slice(4, 10),
     };
   },
 };
