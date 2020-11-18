@@ -72,7 +72,7 @@
             </div>
             <div class="moreoption bg-gray-200">
               <div class="grid grid-cols-3">
-                <div
+                <button
                   class="flex justify-center items-center space-x-1 py-4 px-8 text-white bg-blue-800"
                 >
                   <div>
@@ -100,8 +100,8 @@
                     </svg>
                   </div>
                   <div>POV</div>
-                </div>
-                <div
+                </button>
+                <button
                   class="flex justify-center items-center space-x-1 py-4 px-8 text-black"
                 >
                   <div>
@@ -127,8 +127,8 @@
                     </svg>
                   </div>
                   <div>Article</div>
-                </div>
-                <div
+                </button>
+                <button
                   class="flex justify-center items-center space-x-1 py-4 px-4 text-black"
                 >
                   <div>
@@ -166,7 +166,7 @@
                     </svg>
                   </div>
                   <div>Radio</div>
-                </div>
+                </button>
               </div>
               <div class="p-4">
                 <img
@@ -179,7 +179,7 @@
                   <a href="">Partager cette carricature</a>
                 </div>
                 <div class="grid grid-cols-3">
-                  <div
+                  <button
                     class="flex justify-center items-center space-x-1 py-4 px-8 text-white bg-blue-500"
                   >
                     <div>
@@ -199,8 +199,8 @@
                         />
                       </svg>
                     </div>
-                  </div>
-                  <div
+                  </button>
+                  <button
                     class="flex justify-center items-center space-x-1 py-4 px-8 text-black bg-blue-600"
                   >
                     <div class="text-white">
@@ -221,8 +221,8 @@
                         ></path>
                       </svg>
                     </div>
-                  </div>
-                  <div
+                  </button>
+                  <button
                     class="flex justify-center items-center space-x-1 py-4 px-4 text-black bg-black"
                   >
                     <div>
@@ -249,7 +249,7 @@
                         />
                       </svg>
                     </div>
-                  </div>
+                  </button>
                 </div>
                 <div class="text-center text-sm text-gray-600">
                   <a href="">Plus de carricature de POV</a>
