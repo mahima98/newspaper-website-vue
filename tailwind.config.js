@@ -91,7 +91,7 @@ module.exports = {
         200: "#bee3f8",
         300: "#90CDF4",
         400: "#63b3ed",
-        500: "#3B5998", //f
+        500: "#3B5998", //f   
         600: "#20AAEA", //
         700: "#007AFF", //
         800: "#004A8F",
@@ -357,6 +357,11 @@ module.exports = {
       ...negative(theme("spacing")),
     }),
     maxHeight: {
+       xxs: '1rem',
+      xs: "2rem",
+      sm: "3rem",
+      md: "4rem",
+      lg: "10rem",
       full: "100%",
       screen: "100vh",
     },
