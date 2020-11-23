@@ -4,11 +4,13 @@
       <div class="flex justify-between p-2">
         <div class="logo">
           <div class="flex items-center justify-center">
-            <img
-              class="w-40 h-10"
-              alt="newspaper logo"
-              src="../assets/images/logo.png"
-            />
+            <router-link to="Home">
+              <img
+                class="w-40 h-10"
+                alt="newspaper logo"
+                src="../assets/images/logo.png"
+              />
+            </router-link>
           </div>
         </div>
         <div class="title-bar">
