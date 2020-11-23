@@ -83,7 +83,7 @@
           </div>
           <div class="multimedia-a-ecouter-section py-2">
             <div class="grid grid-cols-2 gap-4">
-              <MultimediaBox2
+              <MultimediaBox
                 v-for="(description, index) in secondatas"
                 :myvaluesmultimedia="description"
                 :key="index"
@@ -135,7 +135,7 @@
 </template>
 <script>
 import DataBox from "../components/DataBox.vue";
-import MultimediaBox2 from "../components/MultimediaBox2.vue";
+import MultimediaBox from "../components/MultimediaBox.vue";
 
 import cards from "../data.js";
 
@@ -143,7 +143,7 @@ export default {
   components: {
     // MultimediaBox1,
     DataBox,
-    MultimediaBox2,
+    MultimediaBox,
   },
   data: () => {
     return {
