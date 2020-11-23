@@ -17,7 +17,7 @@
             >
               <g>
                 <path
-                  style="fill:#030104;"
+                  style="fill:#fff;"
                   d="M11.812,0C5.289,0,0,5.289,0,11.812s5.289,11.813,11.812,11.813s11.813-5.29,11.813-11.813
 		S18.335,0,11.812,0z M14.271,18.307c-0.608,0.24-1.092,0.422-1.455,0.548c-0.362,0.126-0.783,0.189-1.262,0.189
 		c-0.736,0-1.309-0.18-1.717-0.539s-0.611-0.814-0.611-1.367c0-0.215,0.015-0.435,0.045-0.659c0.031-0.224,0.08-0.476,0.147-0.759
@@ -54,41 +54,22 @@
           <button class="flex items-center justify-center px-2">
             <div class="p-1 w-12 h-12 text-white ">
               <svg
-                version="1.1"
-                id="Capa_1"
-                fill="white"
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 320.001 320.001"
-                style="enable-background:new 0 0 320.001 320.001;"
-                xml:space="preserve"
               >
                 <path
-                  d="M295.84,146.049l-256-144c-4.96-2.784-11.008-2.72-15.904,0.128C19.008,5.057,16,10.305,16,16.001v288
-	c0,5.696,3.008,10.944,7.936,13.824c2.496,1.44,5.28,2.176,8.064,2.176c2.688,0,5.408-0.672,7.84-2.048l256-144
-	c5.024-2.848,8.16-8.16,8.16-13.952S300.864,148.897,295.84,146.049z"
-                />
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
-                <g></g>
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
               </svg>
             </div>
             <div class="text-white">
-              <div class="text-xl max-w-xxs text-left">
+              <div class="text-xl max-w-xxs text-left truncate">
                 #{{ myvaluesmultimedia.title }}
               </div>
               <div class="text-left">L'express Maurice</div>
