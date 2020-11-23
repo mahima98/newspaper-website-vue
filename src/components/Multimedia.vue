@@ -43,9 +43,10 @@
       </div>
       <div class="multimedia-video-section py-2">
         <div class="grid grid-cols-4 gap-4">
-          <MultimediaBox1
+          <DataBox
             v-for="(description, index) in firstdatas"
-            :myvaluesmultimedia="description"
+            :firstvalues="description"
+            :layout="MultimediaLayout[index]"
             :key="index"
           />
         </div>
@@ -119,9 +120,10 @@
           </div>
           <div class="multimedia-video-section py-2">
             <div class="grid grid-cols-2 gap-4">
-              <MultimediaBox3
+              <DataBox
                 v-for="(description, index) in thirdatas"
-                :myvaluesmultimedia="description"
+                :firstvalues="description"
+                :layout="MultimediaLayout[index]"
                 :key="index"
               />
             </div>
@@ -132,17 +134,16 @@
   </div>
 </template>
 <script>
-import MultimediaBox1 from "../components/MultimediaBox1.vue";
+import DataBox from "../components/DataBox.vue";
 import MultimediaBox2 from "../components/MultimediaBox2.vue";
-import MultimediaBox3 from "../components/MultimediaBox3.vue";
 
 import cards from "../data.js";
 
 export default {
   components: {
-    MultimediaBox1,
+    // MultimediaBox1,
+    DataBox,
     MultimediaBox2,
-    MultimediaBox3,
   },
   data: () => {
     return {
@@ -150,6 +151,12 @@ export default {
       firstdatas: cards.slice(0, 4),
       secondatas: cards.slice(4, 6),
       thirdatas: cards.slice(6, 8),
+      MultimediaLayout: [
+        { reverse: true, vertical: true, width: true, descriptionHidden: true },
+        { reverse: true, vertical: true, width: true, descriptionHidden: true },
+        { reverse: true, vertical: true, width: true, descriptionHidden: true },
+        { reverse: true, vertical: true, width: true, descriptionHidden: true },
+      ],
     };
   },
 };
