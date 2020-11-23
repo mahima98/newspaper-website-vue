@@ -23,7 +23,7 @@
           <div class="grid grid-rows-4 gap-4">
             <Ads2 />
             <div class="row-span-3">
-              <ActualiteBox3
+              <ActualiteBox
                 v-for="(description, index) in secondatas"
                 :myvalues="description"
                 :key="index"
@@ -233,39 +233,6 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="section1 col-span-3 space-y-4">
-          <div class="grid grid-cols-3 gap-4">
-            <div class="col-span-2">
-              <DataBox
-                v-for="(description, index) in firstdatas"
-                :firstvalues="description"
-                :key="index"
-              />
-            </div>
-            <div>
-              <Ads2 />
-            </div>
-          </div>
-
-          <div class="grid grid-cols-3 gap-4">
-            <div class="col-span-2 space-y-4">
-              <ActualiteBox2 />
-              <DataBox
-                v-for="(description, index) in firstdatas"
-                :firstvalues="description"
-                :key="index"
-              />
-            </div>
-            <div>
-              <ActualiteBox3
-                v-for="(description, index) in secondatas"
-                :myvalues="description"
-                :key="index"
-              />
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
   </div>
@@ -273,14 +240,14 @@
 <script>
 import DataBox from "../components/DataBox.vue";
 import Ads2 from "../components/Ads2.vue";
-import ActualiteBox3 from "../components/ActualiteBox3.vue";
+import ActualiteBox from "../components/ActualiteBox.vue";
 import cards from "../data.js";
 
 export default {
   components: {
     DataBox,
     Ads2,
-    ActualiteBox3,
+    ActualiteBox,
   },
   data: () => {
     return {
