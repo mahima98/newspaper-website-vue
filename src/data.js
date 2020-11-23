@@ -1,6 +1,6 @@
 const cards =    [
 	{
-		"title": "Brody, Minerva, Yoshi, Richard",
+		"title": "Elections villageoises: des signes qui ne trompent pas",
 		"date": "08.13.21",
 		"time": "00:00",
 		"msg": 4,
