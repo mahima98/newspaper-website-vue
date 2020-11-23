@@ -11,10 +11,10 @@
       <div class="grid grid-cols-4 gap-4">
         <div class="first-col col-span-2 ">
           <div class="grid grid-rows-3 gap-4">
-            <ActualiteBox1
+            <DataBox
               v-for="(description, index) in firstdatas"
               :firstvalues="description"
-              :layout="description.reverse"
+              :layout="actualiteLayout[index]"
               :key="index"
             />
           </div>
@@ -237,7 +237,7 @@
         <!-- <div class="section1 col-span-3 space-y-4">
           <div class="grid grid-cols-3 gap-4">
             <div class="col-span-2">
-              <ActualiteBox1
+              <DataBox
                 v-for="(description, index) in firstdatas"
                 :firstvalues="description"
                 :key="index"
@@ -251,7 +251,7 @@
           <div class="grid grid-cols-3 gap-4">
             <div class="col-span-2 space-y-4">
               <ActualiteBox2 />
-              <ActualiteBox1
+              <DataBox
                 v-for="(description, index) in firstdatas"
                 :firstvalues="description"
                 :key="index"
@@ -271,14 +271,14 @@
   </div>
 </template>
 <script>
-import ActualiteBox1 from "../components/ActualiteBox1.vue";
+import DataBox from "../components/DataBox.vue";
 import Ads2 from "../components/Ads2.vue";
 import ActualiteBox3 from "../components/ActualiteBox3.vue";
 import cards from "../data.js";
 
 export default {
   components: {
-    ActualiteBox1,
+    DataBox,
     Ads2,
     ActualiteBox3,
   },
@@ -287,6 +287,11 @@ export default {
       //   subtitle: false,
       firstdatas: cards.slice(0, 3),
       secondatas: cards.slice(4, 10),
+      actualiteLayout: [
+        { reverse: false, vertical: false },
+        { reverse: true, vertical: false },
+        { reverse: false, vertical: false },
+      ],
     };
   },
 };
