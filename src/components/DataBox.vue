@@ -32,7 +32,9 @@
           }"
         >
           <div class="title text-lg">
-            <a href="" class="hover:underline"> {{ firstvalues.title }}</a>
+            <router-link to="Article" class="hover:underline">
+              {{ firstvalues.title }}</router-link
+            >
           </div>
           <div class="time">
             <div class="flex text-xss text-gray-300 space-x-2">
