@@ -32,7 +32,22 @@
           }"
         >
           <div class="title text-lg">
-            <router-link to="Article" class="hover:underline">
+            <router-link
+              :to="{
+                name: 'Article',
+                params: {
+                  id: firstvalues.id,
+                  title: firstvalues.title,
+                  date: firstvalues.date,
+                  time: firstvalues.time,
+                  msg: firstvalues.msg,
+                  description: firstvalues.description,
+                  img: firstvalues.img,
+                  author: firstvalues.author,
+                },
+              }"
+              class="hover:underline"
+            >
               {{ firstvalues.title }}</router-link
             >
           </div>
