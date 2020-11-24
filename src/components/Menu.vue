@@ -4,7 +4,7 @@
       <div class="flex justify-between p-2">
         <div class="logo">
           <div class="flex items-center justify-center">
-            <router-link to="Home">
+            <router-link :to="{ name: 'Home' }">
               <img
                 class="w-40 h-10"
                 alt="newspaper logo"
