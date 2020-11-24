@@ -4,11 +4,12 @@
       <div class="actuality-bar py-2">
         <div class="border-b-4 border-red-700">
           <div class="flex justify-left text-3xl font-sans font-light">
-            Elections villageoises: des signes qui ne trompent pas
+            {{ title }}
           </div>
         </div>
       </div>
-      <div class="flex justify-between my-4 space-x-4">
+
+      <div class="grid grid-cols-4 gap-4 my-4 ">
         <div class="firstCol">
           <div class="flex">
             <div class="h-16 w-16">
@@ -19,7 +20,7 @@
             </div>
             <div class="time px-4">
               <div class="text-left text-lg">
-                Par La Rédaction
+                {{ author }}
               </div>
               <div>
                 <div class="text-xss text-gray-300 ">
@@ -62,7 +63,7 @@
                         />
                       </svg>
                     </div>
-                    <div class="">23 NOV 2020</div>
+                    <div class="">{{ date }}</div>
                   </div>
                   <div class="flex items-center space-x-1">
                     <div class="">
@@ -89,7 +90,7 @@
                         />
                       </svg>
                     </div>
-                    <div>11:00</div>
+                    <div>{{ time }}</div>
                   </div>
                   <div class="flex items-center space-x-1">
                     <div>
@@ -116,7 +117,7 @@
                         </defs>
                       </svg>
                     </div>
-                    <div>0</div>
+                    <div>{{ msg }}</div>
                   </div>
                 </div>
                 <div class="ads space-y-2 py-2">
@@ -126,20 +127,13 @@
             </div>
           </div>
         </div>
-        <div class="secondCol">
+        <div class="secondCol col-span-2">
           <div>
             <img class="object-cover" src="../assets/images/elections1.jpg" />
           </div>
           <div class="text-md text-left max-w-2xl my-4 space-y-4">
             <div>
-              Il n’y a eu ni soleil, ni clé encore moins de cœur ou de coq.
-              Pourtant, il y a eu des groupes proches des partis traditionnels
-              et ils sont dirigés, voire parrainées, par des ministres. S’ils
-              n’utilisent pas les symboles des partis politiques, ceux qui ont
-              sillonné les différents villages hier ont dû s’apercevoir que les
-              candidats portaient des couleurs associées aux partis – comme
-              l’orange, le rouge, le bleu et il y a eu même le rouge-mauve-bleu
-              associé au symbole ciseaux.
+              {{ description }}
             </div>
             <div>
               Cependant, les groupes soutenus par le gouvernement s’affichaient
@@ -253,10 +247,44 @@
 </template>
 <script>
 import Ads2 from "../components/Ads2.vue";
+import cards from "../data.js";
 
 export default {
   components: {
     Ads2,
+  },
+  name: "article",
+  data() {
+    return {
+      id: null,
+      title: null,
+      date: null,
+      time: null,
+      msg: null,
+      description: null,
+      img: null,
+      author: null,
+      selectedCard: null,
+    };
+  },
+  mounted() {
+    // alert("run");
+    this.id = this.$route.params.id;
+    this.title = this.$route.params.title;
+    this.date = this.$route.params.date;
+    this.time = this.$route.params.time;
+    this.msg = this.$route.params.msg;
+    this.description = this.$route.params.description;
+    this.img = this.$route.params.img;
+    this.author = this.$route.params.author;
+
+    let articleid = this.$route.params.id;
+    this.selectedCard = cards.filter(function(item) {
+      if (item.id === articleid) {
+        return item;
+      }
+    });
+    // alert(articleid);
   },
 };
 </script>
