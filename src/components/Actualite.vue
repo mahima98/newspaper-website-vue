@@ -23,9 +23,15 @@
           <div class="grid grid-rows-4 gap-4">
             <Ads2 />
             <div class="row-span-3">
-              <ActualiteBox
+              <!-- <ActualiteBox
                 v-for="(description, index) in secondatas"
                 :myvalues="description"
+                :key="index"
+              /> -->
+              <DataBox
+                v-for="(description, index) in secondatas"
+                :firstvalues="description"
+                :layout="actualiteCol2Layout[index]"
                 :key="index"
               />
             </div>
@@ -240,14 +246,14 @@
 <script>
 import DataBox from "../components/DataBox.vue";
 import Ads2 from "../components/Ads2.vue";
-import ActualiteBox from "../components/ActualiteBox.vue";
+// import ActualiteBox from "../components/ActualiteBox.vue";
 import cards from "../data.js";
 
 export default {
   components: {
     DataBox,
     Ads2,
-    ActualiteBox,
+    // ActualiteBox,
   },
   data: () => {
     return {
@@ -255,9 +261,53 @@ export default {
       firstdatas: cards.slice(0, 3),
       secondatas: cards.slice(4, 10),
       actualiteLayout: [
-        { reverse: false, vertical: false },
-        { reverse: true, vertical: false },
-        { reverse: false, vertical: false },
+        { reverse: false, vertical: false, bgGray: true, textWhite: true },
+        { reverse: true, vertical: false, bgGray: false, textWhite: false },
+        { reverse: false, vertical: false, bgGray: true, textWhite: true },
+      ],
+
+      actualiteCol2Layout: [
+        {
+          reverse: false,
+          descriptionHidden: true,
+          bgwhite: true,
+          imgsmall: true,
+        },
+        {
+          reverse: false,
+          vertical: false,
+          descriptionHidden: true,
+          bgwhite: true,
+          imgsmall: true,
+        },
+        {
+          reverse: false,
+          vertical: false,
+          descriptionHidden: true,
+          bgwhite: true,
+          imgsmall: true,
+        },
+        {
+          reverse: false,
+          vertical: false,
+          descriptionHidden: true,
+          bgwhite: true,
+          imgsmall: true,
+        },
+        {
+          reverse: false,
+          vertical: false,
+          descriptionHidden: true,
+          bgwhite: true,
+          imgsmall: true,
+        },
+        {
+          reverse: false,
+          vertical: false,
+          descriptionHidden: true,
+          bgwhite: true,
+          imgsmall: true,
+        },
       ],
     };
   },
