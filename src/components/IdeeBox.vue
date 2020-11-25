@@ -2,12 +2,12 @@
   <div class="ideeBox">
     <div class="bg-gray-200 p-4 relative">
       <div>
-        <img class="object-cover h-72 w-full" src="../assets/images/img1.png" />
+        <img class="object-cover h-60 w-full" src="../assets/images/img1.png" />
       </div>
       <div
-        class="absolute px-2 py-1 bg-gray-500 text-white top-0 right-0 text-lg"
+        class="absolute px-2 py-1 bg-gray-500 text-white top-0 right-0 text-xs"
       >
-        Politique
+        {{ ideevalues.type }}
       </div>
     </div>
     <div class="description py-2 ">
