@@ -4,7 +4,8 @@
       class=""
       :class="{
         'flex-row-reverse ': layout.reverse,
-        'bg-gray-800': !layout.reverse,
+        'bg-gray-800': layout.bgGray,
+        'bg-white': layout.bgwhite,
         flex: !layout.vertical,
       }"
     >
@@ -12,26 +13,30 @@
         class="image-sec w-7/12"
         :class="{
           'w-full': layout.width,
+          'w-1/12': layout.imgsmall,
         }"
       >
         <img
           class="object-cover h-64 w-full"
+          :class="{ 'max-h-md': layout.imgsmall }"
           src="../assets/images/image1.png"
         />
       </div>
       <div
-        class="description-sec  w-5/12"
+        class="description-sec w-5/12"
         :class="{
           'w-full': layout.width,
+          'w-11/12': layout.imgsmall,
         }"
       >
         <div
           class="space-y-2 p-2 text-left "
           :class="{
-            'text-white': !layout.reverse,
+            'text-white': layout.textWhite,
+            'text-black': layout.textBlack,
           }"
         >
-          <div class="title text-lg">
+          <div class="title text-lg" :class="{ 'text-sm': layout.imgsmall }">
             <router-link
               :to="{
                 name: 'Article',
