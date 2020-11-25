@@ -13,12 +13,18 @@
           </div>
         </div>
       </div>
-      <div class="grid grid-cols-4 gap-4">
-        <IdeeBox
-          v-for="(description, index) in firstdatas"
-          :key="index"
-          :ideevalues="description"
-        />
+
+      <div class="grid grid-cols-4 gap-2">
+        <div class="col-span-3">
+          <div class="grid grid-cols-4 gap-4">
+            <IdeeBox
+              v-for="(description, index) in firstdatas"
+              :key="index"
+              :ideevalues="description"
+            />
+          </div>
+        </div>
+        <div></div>
       </div>
     </div>
   </div>
