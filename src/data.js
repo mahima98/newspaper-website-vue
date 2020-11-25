@@ -7,7 +7,8 @@ const cards =[
 		msg: 1,
 		description: "Proin vel arcu eu odio tristique pharetra. Quisque ac libero nec ligula consectetuer rhoncus. Nullam velit dui, semper et, lacinia vitae, sodales at, velit. Pellentesque ultricies dignissim lacus. Aliquam rutrum lorem ac risus. Morbi metus. Vivamus euismod urna. Nullam lobortis quam a felis ullamcorper viverra. Maecenas iaculis",
 		img: "4260",
-		author: "Robert Diaz"
+		author: "Robert Diaz",
+		type:"EDITORIAL"
 	},
 	{
 		id: 2,
@@ -17,7 +18,8 @@ const cards =[
 		msg: 2,
 		description: "non, lacinia at, iaculis quis, pede. Praesent eu dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eget magna. Suspendisse tristique neque",
 		img: "3976",
-		author: "Lev Wiggins"
+		author: "Lev Wiggins",
+		type:"OPINIONS"
 	},
 	{
 		id: 3,
@@ -27,7 +29,8 @@ const cards =[
 		msg: 3,
 		description: "natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin vel nisl. Quisque fringilla euismod enim. Etiam gravida molestie arcu. Sed eu nibh vulputate mauris sagittis placerat. Cras dictum ultricies ligula. Nullam enim. Sed nulla ante, iaculis nec,",
 		img: "4974",
-		author: "Dominic Gonzales"
+		author: "Dominic Gonzales",
+		type:"BLOG"
 	},
 	{
 		id: 4,
@@ -37,7 +40,8 @@ const cards =[
 		msg: 4,
 		description: "ac risus. Morbi metus. Vivamus euismod urna. Nullam lobortis quam a felis ullamcorper viverra. Maecenas iaculis aliquet diam. Sed diam lorem, auctor quis, tristique ac, eleifend vitae, erat. Vivamus nisi. Mauris nulla. Integer",
 		img: "5080",
-		author: "Kuame Weiss"
+		author: "Kuame Weiss",
+		type:"TRIBUTE"
 	},
 	{
 		id: 5,
@@ -47,7 +51,8 @@ const cards =[
 		msg: 5,
 		description: "parturient montes, nascetur ridiculus mus. Proin vel nisl. Quisque fringilla euismod enim. Etiam gravida molestie arcu. Sed eu nibh vulputate mauris sagittis placerat. Cras dictum ultricies ligula. Nullam enim. Sed nulla ante, iaculis nec, eleifend",
 		img: "4667",
-		author: "Coby Holt"
+		author: "Coby Holt",
+			type:"OPINION"
 	},
 	{
 		id: 6,
@@ -57,7 +62,8 @@ const cards =[
 		msg: 6,
 		description: "mauris erat eget ipsum. Suspendisse sagittis. Nullam vitae diam. Proin dolor. Nulla semper tellus id nunc interdum feugiat. Sed nec metus facilisis lorem tristique aliquet. Phasellus fermentum convallis ligula. Donec luctus aliquet odio. Etiam ligula tortor, dictum eu, placerat eget, venenatis a, magna. Lorem",
 		img: "2431",
-		author: "Reese Burnett"
+		author: "Reese Burnett",
+		type:"OPINION"
 	},
 	{
 		id: 7,
@@ -67,7 +73,8 @@ const cards =[
 		msg: 7,
 		description: "Quisque libero lacus, varius et, euismod et, commodo at, libero. Morbi accumsan laoreet ipsum. Curabitur consequat, lectus sit amet luctus vulputate, nisi sem semper erat, in consectetuer ipsum nunc id enim. Curabitur massa. Vestibulum accumsan neque et nunc. Quisque ornare tortor at risus. Nunc",
 		img: "7352",
-		author: "Flynn Barton"
+		author: "Flynn Barton",
+		type:"OPINION"
 	},
 	{
 		id: 8,
@@ -77,7 +84,8 @@ const cards =[
 		msg: 8,
 		description: "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin vel arcu eu odio tristique pharetra. Quisque ac libero nec ligula consectetuer rhoncus. Nullam velit",
 		img: "8458",
-		author: "Philip Franco"
+		author: "Philip Franco",
+		type:"OPINION"
 	},
 	{
 		id: 9,
