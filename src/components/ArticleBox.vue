@@ -3,8 +3,10 @@
     <div class="container mx-auto">
       <div class="actuality-bar py-2">
         <div class="border-b-4 border-red-700">
-          <div class="flex justify-left text-3xl font-sans font-light">
-            {{ title }}
+          <div
+            class="flex justify-left text-3xl font-sans text-left font-light"
+          >
+            {{ selectedCard.title }}
           </div>
         </div>
       </div>
@@ -20,7 +22,7 @@
             </div>
             <div class="time px-4">
               <div class="text-left text-lg">
-                {{ author }}
+                {{ selectedCard.author }}
               </div>
               <div>
                 <div class="text-xss text-gray-300 ">
@@ -63,7 +65,7 @@
                         />
                       </svg>
                     </div>
-                    <div class="">{{ date }}</div>
+                    <div class="">{{ selectedCard.date }}</div>
                   </div>
                   <div class="flex items-center space-x-1">
                     <div class="">
@@ -90,7 +92,7 @@
                         />
                       </svg>
                     </div>
-                    <div>{{ time }}</div>
+                    <div>{{ selectedCard.time }}</div>
                   </div>
                   <div class="flex items-center space-x-1">
                     <div>
@@ -117,7 +119,7 @@
                         </defs>
                       </svg>
                     </div>
-                    <div>{{ msg }}</div>
+                    <div>{{ selectedCard.msg }}</div>
                   </div>
                 </div>
                 <div class="ads space-y-2 py-2">
@@ -256,34 +258,17 @@ export default {
   name: "article",
   data() {
     return {
-      id: null,
-      title: null,
-      date: null,
-      time: null,
-      msg: null,
-      description: null,
-      img: null,
-      author: null,
       selectedCard: null,
     };
   },
   mounted() {
     // alert("run");
-    this.id = this.$route.params.id;
-    this.title = this.$route.params.title;
-    this.date = this.$route.params.date;
-    this.time = this.$route.params.time;
-    this.msg = this.$route.params.msg;
-    this.description = this.$route.params.description;
-    this.img = this.$route.params.img;
-    this.author = this.$route.params.author;
-
     let articleid = this.$route.params.id;
     this.selectedCard = cards.filter(function(item) {
       if (item.id === articleid) {
         return item;
       }
-    });
+    })[0];
     // alert(articleid);
   },
 };
