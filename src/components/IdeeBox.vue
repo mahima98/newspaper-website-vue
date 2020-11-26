@@ -11,8 +11,23 @@
       </div>
     </div>
     <div class="description py-2 ">
-      <div class="text-left text-xl leading-6 min-h-md ">
-        {{ ideevalues.title }}
+      <div class="text-left text-md leading-6 min-h-md ">
+        <router-link
+          :to="{
+            name: 'Article',
+            params: {
+              id: ideevalues.id,
+              title: ideevalues.title,
+              date: ideevalues.date,
+              time: ideevalues.time,
+              msg: ideevalues.msg,
+              description: ideevalues.description,
+              img: ideevalues.img,
+              author: ideevalues.author,
+            },
+          }"
+          >{{ ideevalues.title }}</router-link
+        >
       </div>
       <div class="time">
         <div class="flex text-xss text-gray-300 space-x-2">
