@@ -42,13 +42,6 @@
                 name: 'Article',
                 params: {
                   id: firstvalues.id,
-                  title: firstvalues.title,
-                  date: firstvalues.date,
-                  time: firstvalues.time,
-                  msg: firstvalues.msg,
-                  description: firstvalues.description,
-                  img: firstvalues.img,
-                  author: firstvalues.author,
                 },
               }"
               class="hover:underline"
