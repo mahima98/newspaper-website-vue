@@ -6,9 +6,12 @@
           <div
             class="flex justify-left text-3xl font-sans text-left font-light"
           >
-            {{ selectedCard.title }}
+            {{ SelectedResults.title }}
           </div>
         </div>
+      </div>
+      <div class="py-8 px-8 bg-yellow-400">
+        <div>{{ SelectedResults.title }}</div>
       </div>
 
       <div class="grid grid-cols-4 gap-4 my-4 ">
@@ -22,7 +25,7 @@
             </div>
             <div class="time px-4">
               <div class="text-left text-lg">
-                {{ selectedCard.author }}
+                {{ SelectedResults.author }}
               </div>
               <div>
                 <div class="text-xss text-gray-300 ">
@@ -65,7 +68,7 @@
                         />
                       </svg>
                     </div>
-                    <div class="">{{ selectedCard.date }}</div>
+                    <div class="">{{ SelectedResults.date }}</div>
                   </div>
                   <div class="flex items-center space-x-1">
                     <div class="">
@@ -92,7 +95,7 @@
                         />
                       </svg>
                     </div>
-                    <div>{{ selectedCard.time }}</div>
+                    <div>{{ SelectedResults.time }}</div>
                   </div>
                   <div class="flex items-center space-x-1">
                     <div>
@@ -119,7 +122,7 @@
                         </defs>
                       </svg>
                     </div>
-                    <div>{{ selectedCard.msg }}</div>
+                    <div>{{ SelectedResults.msg }}</div>
                   </div>
                 </div>
                 <div class="ads space-y-2 py-2">
@@ -249,7 +252,7 @@
 </template>
 <script>
 import Ads2 from "../components/Ads2.vue";
-import cards from "../data.js";
+// import cards from "../data.js";
 
 export default {
   components: {
@@ -258,18 +261,33 @@ export default {
   name: "article",
   data() {
     return {
+      SelectedResults: null,
       selectedCard: null,
     };
   },
+
   mounted() {
     // alert("run");
     let articleid = this.$route.params.id;
-    this.selectedCard = cards.filter(function(item) {
-      if (item.id === articleid) {
-        return item;
-      }
-    })[0];
+    // this.selectedCard = cards.filter(function(item) {
+    //   if (item.id === articleid) {
+    //     return item;
+    //   }
+    // })[0];
     // alert(articleid);
+
+    this.$http
+      .get("http://127.0.0.1:8081/api.json/")
+      .then(function(result) {
+        this.SelectedResults = result.body.filter(function(item) {
+          if (item.id === articleid) {
+            return item;
+          }
+        })[0];
+      })
+      .catch(function(error) {
+        console.log("Error:", error);
+      });
   },
 };
 </script>
