@@ -24,18 +24,24 @@
             />
           </div>
         </div>
-        <div></div>
+        <div class="space-y-4">
+          <Ads2 />
+          <Ads2 />
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script>
 import IdeeBox from "../components/IdeeBox.vue";
+import Ads2 from "../components/Ads2.vue";
+
 import cards from "../data.js";
 
 export default {
   components: {
     IdeeBox,
+    Ads2,
   },
 
   data: () => {
