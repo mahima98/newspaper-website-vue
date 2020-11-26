@@ -259,7 +259,7 @@ export default {
     return {
       //   subtitle: false,
       firstdatas: cards.slice(0, 3),
-      secondatas: cards.slice(4, 10),
+      secondatas: cards.slice(0, 5),
       actualiteLayout: [
         { reverse: false, vertical: false, bgGray: true, textWhite: true },
         { reverse: true, vertical: false, bgGray: false, textWhite: false },
