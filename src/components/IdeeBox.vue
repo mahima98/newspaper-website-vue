@@ -71,7 +71,7 @@
               </svg>
             </div>
 
-            <div>{{ ideevalues.author }}</div>
+            <div class="max-w-xss truncate">{{ ideevalues.author }}</div>
           </div>
           <div class="flex text-center items-center space-x-1">
             <div class="">
