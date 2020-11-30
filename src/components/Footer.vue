@@ -58,8 +58,8 @@
     </div>
     <div class="bg-black">
       <div class="container mx-auto">
-        <div class="parti-sociaux grid grid-cols-4 gap-4">
-          <div class="les-partenaire col-span-3">
+        <div class="parti-sociaux grid grid-cols-4 gap-2">
+          <div class="les-partenaire col-span-3 ">
             <div class="text-white">
               Les autres sites du groupe La Sentinelle et partenaires
             </div>
